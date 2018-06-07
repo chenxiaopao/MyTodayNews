@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SearchRecommandReusableView" customModule="TodayNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜你想搜的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vf-Ik-f4p">
+                    <rect key="frame" x="15" y="5" width="71.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azw-QY-PaI">
+                    <rect key="frame" x="287" y="5" width="18" height="30"/>
+                    <state key="normal" image="deleteicon_channel"/>
+                    <connections>
+                        <action selector="closeBtn:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="8Je-hy-d2p"/>
+                    </connections>
+                </button>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Os9-SM-7Tq">
+                    <rect key="frame" x="0.0" y="39" width="320" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yPf-Mr-QmN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiQ-DA-E45">
+                    <rect key="frame" x="60.5" y="0.0" width="200" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="g59-04-ZaA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="查看全部推荐词" image="deleteicon_channel">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ShowRecommendClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Pyo-JD-eh2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="3Vf-Ik-f4p" secondAttribute="bottom" constant="5" id="48h-21-LhX"/>
+                <constraint firstItem="Os9-SM-7Tq" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="LKD-dc-hcE"/>
+                <constraint firstItem="RiQ-DA-E45" firstAttribute="centerY" secondItem="VXr-Tz-HHm" secondAttribute="centerY" id="POe-DJ-zOr"/>
+                <constraint firstItem="RiQ-DA-E45" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="Ycl-HA-cxy"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="azw-QY-PaI" secondAttribute="bottom" constant="5" id="c4P-Br-7l1"/>
+                <constraint firstItem="RiQ-DA-E45" firstAttribute="centerX" secondItem="VXr-Tz-HHm" secondAttribute="centerX" id="cpq-uY-EUt"/>
+                <constraint firstItem="3Vf-Ik-f4p" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="15" id="eEe-MH-L76"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="Os9-SM-7Tq" secondAttribute="bottom" id="hHX-xO-7ta"/>
+                <constraint firstItem="3Vf-Ik-f4p" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="5" id="n82-M7-uCO"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="azw-QY-PaI" secondAttribute="trailing" constant="15" id="q7z-L9-9Yq"/>
+                <constraint firstItem="azw-QY-PaI" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="5" id="tdt-D2-0rl"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Os9-SM-7Tq" secondAttribute="trailing" id="z9P-HM-kGH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="bottomLineConstraintsHeight" destination="yPf-Mr-QmN" id="Ozb-ed-KZE"/>
+                <outlet property="btnClose" destination="azw-QY-PaI" id="GkF-xH-iYN"/>
+                <outlet property="btnShowRecommend" destination="RiQ-DA-E45" id="5ck-mz-Jkj"/>
+                <outlet property="label" destination="3Vf-Ik-f4p" id="UTa-LV-yKU"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="deleteicon_channel" width="18" height="18"/>
+    </resources>
+</document>

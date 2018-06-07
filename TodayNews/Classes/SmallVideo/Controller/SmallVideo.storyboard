@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Psf-fL-bAS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Small Video View Controller-->
+        <scene sceneID="hec-fI-yIe">
+            <objects>
+                <viewController id="IIN-3v-uCy" customClass="SmallVideoViewController" customModule="TodayNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p53-5p-XOO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="1m0-1E-MNz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bXZ-Fa-zeG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haa-gJ-kXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="1220"/>
+        </scene>
+        <!--小视频-->
+        <scene sceneID="ljE-Im-u7o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Psf-fL-bAS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="小视频" image="huoshan_tabbar_32x32_" selectedImage="huoshan_tabbar_press_32x32_" id="yYp-Ef-D13"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mo9-Zu-Xzb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IIN-3v-uCy" kind="relationship" relationship="rootViewController" id="RAd-Ar-qj6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1s-kw-QJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="1221"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="huoshan_tabbar_32x32_" width="32" height="32"/>
+        <image name="huoshan_tabbar_press_32x32_" width="32" height="32"/>
+    </resources>
+</document>
